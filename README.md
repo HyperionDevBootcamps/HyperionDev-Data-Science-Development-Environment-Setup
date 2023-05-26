@@ -33,7 +33,7 @@ them into your terminal.
 zsh ./macos_ds.sh
 ```
 
-### Windows (Powershell Run as a Administrator)
+### Windows (Powershell run as an Administrator)
 
 ```.ps1
 .\windows_ds.ps1
