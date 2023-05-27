@@ -1,5 +1,7 @@
-echo "WELCOME TO HYPERIONDEV'S DATA SCIENCE BOOTCAMP DEVELOPMENT ENVIRONMENT SETUP SCRIPT"
-echo "Please ignore any errors concerning tools already installed and enter your password and accept when prompted"
+echo -e "\nWELCOME TO HYPERIONDEV'S DATA SCIENCE BOOTCAMP DEVELOPMENT ENVIRONMENT SETUP SCRIPT\n"
+echo "Please ignore any errors concerning tools already installed"
+echo "Please note that characters won't be displayed in the terminal as you enter your password when prompted for security purposes"
+echo "Press Enter/Return and enter your Mac password whenever prompted to allow installation to proceed"
 
 # Only run if the tools are not installed yet
 # To check that try to print the SDK path
