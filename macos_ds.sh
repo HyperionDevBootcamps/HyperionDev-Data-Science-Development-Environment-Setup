@@ -14,17 +14,25 @@ else
   echo "Command Line Tools for Xcode have been installed."
 fi
 
+# Install Homebrew
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh &> /dev/null
 
+# Install non-system Python
 brew install python
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
 source ~/.zprofile
 
+# Install Git
 brew install git
+
+# Install Visual Studio Code
 brew install --cask visual-studio-code
 
+# Install all Python packages
 python -m pip install --user --upgrade pip
 python -m pip install --user -r requirements.txt
+
+# Download spaCy models
 python -m spacy download en_core_web_sm
 python -m spacy download en_core_web_md
