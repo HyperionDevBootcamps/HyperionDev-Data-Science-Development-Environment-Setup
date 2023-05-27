@@ -1,3 +1,6 @@
+echo "WELCOME TO HYPERIONDEV'S DATA SCIENCE BOOTCAMP DEVELOPMENT ENVIRONMENT SETUP SCRIPT"
+echo "Please ignore any errors concerning tools already installed and enter your password and accept when prompted"
+
 # Only run if the tools are not installed yet
 # To check that try to print the SDK path
 xcode-select -p &> /dev/null
@@ -14,8 +17,13 @@ fi
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
 brew install python
+echo "alias python='python3'" > ~/.zprofile
+echo "alias py='python3'" > ~/.zprofile
+source ~/.zprofile
+
 brew install git
 brew install --cask visual-studio-code
+
 python -m pip install --user --upgrade pip
 python -m pip install --user -r requirements.txt
 python -m spacy download en_core_web_sm
