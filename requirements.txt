@@ -11,3 +11,4 @@ ipython
 tensorflow
 fuzzywuzzy
 chardet
+jupyter
