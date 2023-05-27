@@ -15,7 +15,7 @@ else
 fi
 
 # Install Homebrew
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew has been installed"
 
 # Install non-system Python
