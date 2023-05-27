@@ -15,7 +15,7 @@ else
 fi
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &> /dev/null
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew has been installed"
 
 # Install non-system Python
@@ -37,8 +37,8 @@ python -m pip install --user --upgrade pip --quiet
 python -m pip install --user -r requirements.txt --quiet
 cd ..
 rm -rf pysetup
-python -m spacy download en_core_web_sm &> /dev/null
-python -m spacy download en_core_web_md &> /dev/null
+python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_md
 echo "All the your Python packages are set up"
 
 
