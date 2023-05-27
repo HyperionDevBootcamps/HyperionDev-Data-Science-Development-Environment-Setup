@@ -11,29 +11,42 @@ if [ $? -ne 0 ]; then
   PROD=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | sed 's/^[^C]* //')
   softwareupdate -i "$PROD" --quiet;
 else
-  echo "Command Line Tools for Xcode have been installed."
+  echo "Command Line Tools for Xcode have been installed"
 fi
 
 # Install Homebrew
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh &> /dev/null
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &> /dev/null
 echo "Homebrew has been installed"
 
 # Install non-system Python
-brew install python
+brew install python --quiet
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
 source ~/.zprofile
+echo "Python has been installed"
 
 # Install Git
-brew install git
-
-# Install Visual Studio Code
-brew install --cask visual-studio-code
+brew install git --quiet
+echo "Git has been installed"
 
 # Install all Python packages
-python -m pip install --user --upgrade pip
-python -m pip install --user -r requirements.txt
+mkdir pysetup
+cd pysetup
+curl https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt > requirements.txt
+python -m pip install --user --upgrade pip --quiet
+python -m pip install --user -r requirements.txt --quiet
+cd ..
+rm -rf pysetup
+python -m spacy download en_core_web_sm &> /dev/null
+python -m spacy download en_core_web_md &> /dev/null
+echo "All the your Python packages are set up"
 
-# Download spaCy models
-python -m spacy download en_core_web_sm
-python -m spacy download en_core_web_md
+
+# Install Visual Studio Code
+brew install --cask visual-studio-code --quiet
+code --install-extension ms-python.python --force
+code --install-extension ms-toolsai.jupyter --force
+echo "Visual Studio Code has been installed"
+
+echo "All the software needed for your bootcamp are installed"
+echo "Submit a query via your HyperionDev dashboard if you run into any issues"

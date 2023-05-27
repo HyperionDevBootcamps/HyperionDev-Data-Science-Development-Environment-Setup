@@ -30,7 +30,7 @@ them into your terminal.
 ### macOS (Terminal)
 
 ```.sh
-zsh ./macos_ds.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/macos_ds.sh)"
 ```
 
 ### Windows (Powershell run as an Administrator)
