@@ -14,7 +14,7 @@ else
   echo "Command Line Tools for Xcode have been installed."
 fi
 
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh &> /dev/null
 
 brew install python
 echo "alias python='python3'" >> ~/.zprofile
