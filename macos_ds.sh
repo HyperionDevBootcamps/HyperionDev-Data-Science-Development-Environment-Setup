@@ -19,22 +19,22 @@ fi
 echo "Homebrew has been installed"
 
 # Install non-system Python
-brew install python --quiet
+brew install python
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
 source ~/.zprofile
 echo "Python has been installed"
 
 # Install Git
-brew install git --quiet
+brew install git
 echo "Git has been installed"
 
 # Install all Python packages
 mkdir pysetup
 cd pysetup
 curl https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt > requirements.txt
-python -m pip install --user --upgrade pip --quiet
-python -m pip install --user -r requirements.txt --quiet
+python -m pip install --user --upgrade pip
+python -m pip install --user -r requirements.txt
 cd ..
 rm -rf pysetup
 python -m spacy download en_core_web_sm
@@ -43,7 +43,7 @@ echo "All the your Python packages are set up"
 
 
 # Install Visual Studio Code
-brew install --cask visual-studio-code --quiet
+brew install --cask visual-studio-code
 code --install-extension ms-python.python --force
 code --install-extension ms-toolsai.jupyter --force
 echo "Visual Studio Code has been installed"
