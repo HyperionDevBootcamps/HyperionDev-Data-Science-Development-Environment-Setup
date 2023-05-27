@@ -22,8 +22,6 @@ echo "Homebrew has been installed"
 brew install python
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
-alias python='python3'
-alias py='python3'
 echo "Python has been installed"
 
 # Install Git
@@ -34,12 +32,12 @@ echo "Git has been installed"
 mkdir pysetup
 cd pysetup
 curl https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt > requirements.txt
-python -m pip install --user --upgrade pip
-python -m pip install --user -r requirements.txt
+python3 -m pip install --user --upgrade pip
+python3 -m pip install --user -r requirements.txt
 cd ..
 rm -rf pysetup
-python -m spacy download en_core_web_sm
-python -m spacy download en_core_web_md
+python3 -m spacy download en_core_web_sm
+python3 -m spacy download en_core_web_md
 echo "All the your Python packages are set up"
 
 
