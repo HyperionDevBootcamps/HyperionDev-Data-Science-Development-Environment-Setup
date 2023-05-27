@@ -16,6 +16,7 @@ fi
 
 # Install Homebrew
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh &> /dev/null
+echo "Homebrew has been installed"
 
 # Install non-system Python
 brew install python
