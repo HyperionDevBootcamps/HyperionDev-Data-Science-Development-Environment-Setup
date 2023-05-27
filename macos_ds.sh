@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 # This temporary file prompts the 'softwareupdate' utility to list the Command Line Tools
   touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
   PROD=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | sed 's/^[^C]* //')
-  softwareupdate -i "$PROD" --verbose;
+  softwareupdate -i "$PROD" --quiet;
 else
   echo "Command Line Tools for Xcode have been installed."
 fi
@@ -17,8 +17,8 @@ fi
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
 brew install python
-echo "alias python='python3'" > ~/.zprofile
-echo "alias py='python3'" > ~/.zprofile
+echo "alias python='python3'" >> ~/.zprofile
+echo "alias py='python3'" >> ~/.zprofile
 source ~/.zprofile
 
 brew install git
