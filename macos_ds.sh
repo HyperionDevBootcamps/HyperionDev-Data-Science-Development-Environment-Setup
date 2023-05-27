@@ -20,10 +20,11 @@ echo "Homebrew has been installed"
 
 # Install non-system Python
 brew install python
+echo "alias python='python3'" >> ~/.bash_profile
+echo "alias py='python3'" >> ~/.bash_profile
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
-echo "alias python='python3'" >> ~/.bashprofile
-echo "alias py='python3'" >> ~/.bashprofile
+source ~/.bash_profile
 source ~/.zprofile
 echo "Python has been installed"
 
