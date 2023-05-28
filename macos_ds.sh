@@ -20,15 +20,15 @@ fi
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Homebrew has been installed"
 
+# Install Git
+brew install git
+echo "Git has been installed"
+
 # Install non-system Python
 brew install python
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
 echo "Python has been installed"
-
-# Install Git
-brew install git
-echo "Git has been installed"
 
 # Install all Python packages
 mkdir pysetup
