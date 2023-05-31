@@ -15,8 +15,11 @@ Write-Output "Git has been instaleld"
 # Install Python
 Remove-Item $env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\python*.exe # Disable Windows Store version
 choco install python
-(Invoke-WebRequest -URI 'https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt').Content > requirements.txt
+New-Item -Name "pysetup" -ItemType "directory"
+Set-Location "pysetup"
+(Invoke-WebRequest -URI "https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt").Content > requirements.txt
 python -m pip install --user -r requirements.txt
+Set-Location ".."
 python -m spacy download en_core_web_sm
 python -m spacy download en_core_web_md
 Write-Output "Python has been installed"
