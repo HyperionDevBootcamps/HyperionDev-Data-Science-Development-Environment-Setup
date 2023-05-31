@@ -42,7 +42,6 @@ python3 -m spacy download en_core_web_sm
 python3 -m spacy download en_core_web_md
 echo "All the your Python packages are set up"
 
-
 # Install Visual Studio Code
 brew install --cask visual-studio-code
 code --install-extension ms-python.python --force
