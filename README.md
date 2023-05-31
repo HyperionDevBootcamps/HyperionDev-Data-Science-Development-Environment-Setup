@@ -20,12 +20,17 @@ or Ubuntu.
 
 ## Instructions
 
-Clone this repository to your local file system. Navigate to the newly created folder and open the terminal there.
+On Windows, please ensure you have administrator access to Powershell. On macOS, Fedora and Ubuntu, you can simply
+open your terminal.
 
-From your terminal open in this repository, you can 
-run the following commands for the respective 
-operating systems. You can simply copy and paste
-them into your terminal.
+Once your terminal is open, please click the copy icon that pops  on the right of each of the commands shown below 
+depending on your operating system choice. That will copy onto the your clipboard the full command you need to run to
+set up your computer for the whole bootcamp.
+
+Once you have copied the command, you can simply paste it into the terminal and press enter. Please follow all
+ensuing instructions, enter your computer password as necessary and press Enter/Return when prompted.
+
+Should you run into issues, please submit a query via your dashboard.
 
 ### macOS (Terminal)
 
