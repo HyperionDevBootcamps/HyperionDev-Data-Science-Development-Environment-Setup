@@ -13,6 +13,7 @@ choco install git
 Write-Output "Git has been instaleld"
 
 # Install Python
+Remove-Item $env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\python*.exe # Disable Windows Store version
 choco install python
 (Invoke-WebRequest -URI 'https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt').Content > requirements.txt
 python -m pip install --user -r requirements.txt
