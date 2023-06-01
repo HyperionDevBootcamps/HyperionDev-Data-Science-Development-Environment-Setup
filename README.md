@@ -27,6 +27,12 @@ open your terminal.
 #### macOS
 ![](https://github.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/blob/master/mac_terminal.gif)
 
+#### Windows
+![](https://github.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/blob/master/windows_admin_powershell.gif)
+
+#### Linux
+![](https://github.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/blob/master/linux_terminal.gif)
+
 Once your terminal is open, please click the copy icon that pops  on the right of each of the commands shown below 
 depending on your operating system choice. That will copy onto the your clipboard the full command you need to run to
 set up your computer for the whole bootcamp.
