@@ -10,7 +10,7 @@ Write-Output "Chocolatey has been installed"
 
 # Install Git
 choco install git
-Write-Output "Git has been instaleld"
+Write-Output "Git has been installed"
 
 # Install Python
 Remove-Item $env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\python*.exe # Disable Windows Store version
