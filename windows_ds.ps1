@@ -14,7 +14,7 @@ Write-Output "Git has been installed"
 
 # Install Python
 Remove-Item $env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\python*.exe # Disable Windows Store version
-choco install python
+choco install python311
 New-Item -Name "pysetup" -ItemType "directory"
 Set-Location "pysetup"
 (Invoke-WebRequest -URI "https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/requirements.txt").Content > requirements.txt
