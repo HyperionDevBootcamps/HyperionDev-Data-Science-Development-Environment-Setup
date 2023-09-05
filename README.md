@@ -51,7 +51,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/HyperionDevBootcamps/Hyp
 #### Windows (Powershell run as an Administrator)
 
 ```.ps1
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression (Invoke-WebRequest -URI "https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/windows_ds.ps1").Content
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression (Invoke-WebRequest -URI "https://raw.githubusercontent.com/HyperionDevBootcamps/HyperionDev-Data-Science-Development-Environment-Setup/master/windows_ds.ps1" -UseBasicParsing).Content
 ```
 
 #### Fedora (Terminal)
