@@ -25,7 +25,7 @@ brew install git
 echo "Git has been installed"
 
 # Install non-system Python
-brew install python@3.11
+brew install python
 echo "alias python='python3'" >> ~/.zprofile
 echo "alias py='python3'" >> ~/.zprofile
 echo "Python has been installed"
